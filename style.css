@@ -1,56 +1,59 @@
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+html{
     font-family: Arial, Helvetica, sans-serif;
 }
 .header{
-    background: url('jake-hills-z0gDv24X3uQ-unsplash.jpg');
-    height: 100vh;
+    background-image: url(jake-hills-z0gDv24X3uQ-unsplash.jpg);
+    height: 95vh;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
 }
-.header .navbar .logo{
+.navbar .logo{
     float: left;
 }
-.header .navbar .logo{
-    font-size: 2rem;
-    color: navajowhite;
-}
-.header .navbar .ul-items{
+.navbar .ul-items{
     float: right;
 }
-.list-items{
-    display: inline;
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
 }
-.header .ul-items{
-    margin-right: 5em;
+.navbar .logo{
+    color: #fff;
+    margin-left: 2rem;
 }
-.header .navbar .logo{
-    margin-left: 5em;
-}
-.ul-items .list-items{
+li{
+    list-style: none;
     margin: 5px;
-    
+}
+ul{
+    display: flex;
+    margin-right: 2rem;
 }
 a{
-    color: #f0f8ff;
     text-decoration: none;
+    color: aliceblue;
+}
+a:link{
+    color: aliceblue;
+}
+a:hover{
+    border-bottom: 2px solid orangered;
     padding-bottom: 2.5px;
 }
-
-.navbar a:hover{
-    border-bottom: 2px solid aqua;
+.navbar{
+    padding-bottom: 2px;
 }
 select{
-    background: #fff;
+    background-color: #fff;
 }
-/* ################# utility classes */
 .container{
     max-width: 1200px;
-    width: 90%;
-    max-width: 0 auto;
-} 
+
+}
