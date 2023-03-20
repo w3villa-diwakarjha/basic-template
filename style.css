@@ -72,6 +72,12 @@ select{
     margin: 0 auto;
 }
 
+.container2{
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .main-txt{
     color: #fff;
 }
@@ -113,13 +119,10 @@ select{
 }
 
 .brand1{
-    /* border: 2px solid red; */
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.39);
+    margin-bottom: 20px;
 }
 .brand1 .brand1-txt{
-    /* margin: 4em 0px;  */
-    /* margin-top: 1rem; */
-    /* margin-bottom: 1rem; */
     padding: 4em 0;
 }
 .brand1-heading{
@@ -131,4 +134,33 @@ select{
 .brand1-para{
     margin-top: 2em;
     color: gray;
+}
+img{
+    background: #D6D6D1;
+    height: 200px;
+    width: 350px;
+}
+.sub-img{
+    display: flex;
+    margin: 0px 10rem;
+    align-items: center;
+}
+.img1{
+    /* margin-right: -50px; */
+    margin-right: 10px;
+}
+.img2{
+    /* margin-right: -50px; */
+    margin-right: 10px;
+}
+.name-img{
+    margin: 20px 0px;
+}
+.name-para{
+    color: grey;
+}
+.name-img-para{
+    font-weight: 200px;
+    font-size: medium;
+    color: grey;
 }
