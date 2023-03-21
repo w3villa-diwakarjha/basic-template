@@ -89,18 +89,20 @@ select{
 
 .main-txt{
     color: #fff;
+    font-size: 39px;
+    font-weight: 500;
 }
 
 .btn{
     color: #fff;
-    background-color: red;
-    padding: 5px 10px;
-    border-radius: 15px;
-    border: 1px solid red;
+    background-color: deeppink;
+    padding: 9px 20px;
+    border-radius: 18px;
+    border: 1px solid deeppink;
     cursor: pointer;
     outline: none;
     font-size: 1rem;
-    margin-top: 8px;
+    margin-top: 1.5rem;
 }
 .btn:hover{
     font-size: 1.005rem;
@@ -108,7 +110,7 @@ select{
 .header-txt{
     position: absolute;
     top: 40%;
-    left: 24%;
+    left: 28%;
     /* transform: translate(-40%, -38%); */
     padding: 20px;
     text-align: center;
@@ -127,6 +129,7 @@ select{
 .brand-para{
     margin-top: 2em;
     color: gray;
+    text-align: center;
     /* font-size: x-large; */
 }
 
@@ -147,6 +150,7 @@ select{
 .brand1-para{
     margin-top: 2em;
     color: gray;
+    text-align: center;
 }
 img{
     width: 100%;
@@ -177,6 +181,7 @@ img{
 }
 .name-para{
     color: grey;
+    margin-bottom: 1rem;
 }
 .name-img-para{
     font-weight: 200px;
@@ -199,12 +204,13 @@ img{
 }
 .extra-btn-btn{
     margin: 0px 2rem;
-    background-color: #eb16bd;;
+    background-color: rgb(219, 36, 97);
     padding: 10px 20px;
     border-radius: 5rem;
     font-size: medium;
     border: none;
     cursor: pointer;
+    color: aliceblue;
 }
 .footer{
     margin: 5rem;
@@ -212,6 +218,7 @@ img{
 .footer-main{
     display: flex;
     /* margin: 0px 2rem; */
+    padding-bottom: 5rem;
 }
 .footer-txt{
     margin: 0px 10rem;
@@ -239,7 +246,8 @@ i{
     font-weight: 200;
 }
 .footer-foot{
-    font-weight: 200;
+    font-weight: 10;
+    color: #808080;
 }
 .footer-para{
     margin: 8px 0px;
