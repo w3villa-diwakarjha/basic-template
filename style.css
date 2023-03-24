@@ -3,65 +3,71 @@
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
-.header{
+
+.header {
     position: relative;
     background-image: url(./img/jake-hills-z0gDv24X3uQ-unsplash.jpg);
     height: 95vh;
     background-position: center;
     background-repeat: no-repeat;
 }
-.navbar .logo{
+
+.navbar .logo {
     float: left;
 }
-.navbar .ul-items{
+
+.navbar .ul-items {
     float: right;
 }
-.navbar::after{
+
+.navbar::after {
     content: '';
     display: block;
     clear: both;
 }
-.navbar .logo{
+
+.navbar .logo {
     color: #fff;
     margin-left: 2rem;
 }
-/* .list-items{
-    /* margin-right: 4px; 
-    width: 50px;
-} */
-li{
+
+li {
     list-style: none;
     margin: 5px;
 }
-ul{
+
+ul {
     display: flex;
     margin-right: 2rem;
 }
 
-.ul-items,.logo{
+.ul-items,
+.logo {
     padding: 1rem 0px;
 }
 
-a{
+a {
     text-decoration: none;
     color: aliceblue;
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     border-bottom: 2px solid orangered;
     padding-bottom: 2.5px;
     color: aliceblue;
 }
 
-.navbar{
+.navbar {
     padding-bottom: 2px;
+
 }
 
-select{
+select {
     background-color: transparent;
     margin-left: 20px;
     cursor: pointer;
@@ -69,31 +75,31 @@ select{
     outline: none;
 }
 
-.container{
+.container {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
 
-.container1{
+.container1 {
     max-width: 620px;
     width: 90%;
     margin: 0 auto;
 }
 
-.container2{
+.container2 {
     max-width: 500px;
     width: 90%;
     margin: 0 auto;
 }
-
-.main-txt{
+.main-txt {
     color: #fff;
     font-size: 39px;
     font-weight: 500;
+    text-align: center;
 }
 
-.btn{
+.btn {
     color: #fff;
     background-color: deeppink;
     padding: 9px 20px;
@@ -104,105 +110,121 @@ select{
     font-size: 1rem;
     margin-top: 1.5rem;
 }
-.btn:hover{
+
+.btn:hover {
     font-size: 1.005rem;
 }
-.header-txt{
-    position: absolute;
-    top: 40%;
-    left: 28%;
-    /* transform: translate(-40%, -38%); */
-    padding: 20px;
-    text-align: center;
+
+.header-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    flex-direction: column;
 }
+
 /* ###################  Description ##################### */
 
-.brandtxt{
+.brandtxt {
     margin: 4em 0px;
 }
-.brand-heading{
+
+.brand-heading {
     text-align: center;
     font-size: xx-large;
     font-weight: 400;
     color: gray;
 }
-.brand-para{
+
+.brand-para {
     margin-top: 2em;
     color: gray;
     text-align: center;
     /* font-size: x-large; */
 }
 
-.brand1{
+.brand1 {
     background-color: rgba(211, 211, 211, 0.39);
     padding-bottom: 4rem;
     /* border: 2px solid red; */
 }
-.brand1 .brand1-txt{
+
+.brand1 .brand1-txt {
     padding: 4em 0;
 }
-.brand1-heading{
+
+.brand1-heading {
     text-align: center;
     font-size: xx-large;
     font-weight: 400;
     color: gray;
 }
-.brand1-para{
+
+.brand1-para {
     margin-top: 2em;
     color: gray;
     text-align: center;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.image1, .image2, .image3{
+.image1,
+.image2,
+.image3 {
     height: 250px;
     background-color: #D6D6D1;
 }
 
-.sub-img{
+.sub-img {
     display: flex;
     margin: 0px 10rem;
     align-items: center;
 }
-.img1{
-    /* margin-right: -50px; */
+
+.img1 {
     margin-right: 10px;
 }
-.img2{
-    /* margin-right: -50px; */
+
+.img2 {
     margin-right: 10px;
 }
-.name-img{
+
+.name-img {
     margin: 20px 0px;
 }
-.name-para{
+
+.name-para {
     color: grey;
     margin-bottom: 1rem;
 }
-.name-img-para{
+
+.name-img-para {
     font-weight: 200px;
     font-size: medium;
     color: grey;
 }
-.name-img-para{
+
+.name-img-para {
     margin-top: 10px;
 }
 
-.extra-btn{
+.extra-btn {
     /* border:2px solid black; */
     background: deeppink;
     padding: 3rem 10rem;
     /* display: inline; */
 }
-.extra-btn-para{
+
+.extra-btn-para {
     color: aliceblue;
     display: inline;
 }
-.extra-btn-btn{
+
+.extra-btn-btn {
     margin: 0px 2rem;
     background-color: rgb(219, 36, 97);
     padding: 10px 20px;
@@ -212,44 +234,147 @@ img{
     cursor: pointer;
     color: aliceblue;
 }
-.footer{
+
+.footer {
     margin: 5rem;
 }
-.footer-main{
+
+.footer-main {
     display: flex;
     /* margin: 0px 2rem; */
-    padding-bottom: 5rem;
+    padding-bottom: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.footer-txt{
-    margin: 0px 10rem;
-}
-span{
+
+    
+
+span {
     font-size: medium;
     color: navy;
 }
-i{
+
+i {
     font-size: xx-large;
     padding: 5px;
     font-weight: 200;
     cursor: pointer;
 }
-.last-div-footer{
+
+.last-div-footer {
     display: flex;
     justify-content: space-between;
 }
-.footer-foot1,.footer-foot{
+
+.footer-foot1,
+.footer-foot {
     margin-top: 1rem;
     justify-content: space-around;
 }
-.footer-foot1{
+
+.footer-foot1 {
     font-size: xx-large;
     font-weight: 200;
 }
-.footer-foot{
+
+.footer-foot {
     font-weight: 10;
     color: #808080;
 }
-.footer-para{
+
+.footer-para {
     margin: 8px 0px;
     color: grey;
 }
+
+/* ######################### Responsive Bar ################### */
+
+.ul-items i {
+    display: none;
+    color: #fff;
+}
+
+.ul-item {
+    display: flex;
+}
+
+.ul-itemsmm {
+    display: none;
+}
+
+.ul-itemsm{
+    text-align: center;
+}
+
+/* ############################ Media Query ####################### */
+
+@media (max-width: 1200px)
+{
+    .sub-img{
+        flex-direction: column;
+    }
+    .img1,.img2,.img3{
+        width: 50%;
+    }
+}
+@media (max-width: 900px){
+    .sub-img{
+        width: 500px;
+        margin: auto;
+    }
+}
+
+/* @media (max-width: 850px) {
+    .ul-items i {
+        display: block;
+    }
+
+    .ul-item {
+        display: none;
+    }
+
+    .ul-itemsmm {
+        display: block;
+        position: relative;
+        top: 62px;
+        right: 9px;
+        width: 472px;
+        background-color: deeppink;
+        z-index: 2;
+        margin: auto;
+    }
+
+
+} */
+
+/* @media (max-width: 737px){
+    .ul-itemsmm{
+        width: 400px;
+
+    }
+}
+@media (max-width: 657px){
+    .ul-itemsmm{
+        width: 300px;
+
+    }
+}
+@media (max-width: 546px){
+    .ul-itemsmm{
+        width: 200px;
+
+    }
+}
+
+@media (max-width: 436px){
+    .ul-itemsmm{
+        width: 150px;
+
+    }
+}
+@media (max-width: 380px){
+    .ul-itemsmm{
+        width: 100px;
+
+    }
+} */

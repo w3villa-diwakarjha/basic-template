@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/94e9fcf317.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Document</title>
 </head>
 
@@ -17,22 +17,44 @@
             <div class="container">
                 <h1 class="logo">W3 villa</h1>
                 <ul class="ul-items">
-                    <li class="list-items"><a href="">Feature</a></li>
-                    <li class="list-items"><a href="">Pricing</a></li>
-                    <li class="list-items"><a href="">About</a></li>
-                    <li class="list-items"><a href="">Contact</a></li>
-                    <li class="list-items">|</li>
-                    <li class="list-items"><a href="">Login</a></li>
-                    <li class="list-items"><a href="">Signup</a></li>
-                    <select>
-                        <option value="India">🇮🇳</option>
-                        <option value="Englad">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-                    </select>
+                    <div class="ul-itemsmm ">
+                        <div class="ul-itemsm">
+                            <li class="list-items"><a href="">Feature</a></li>
+                            <li class="list-items"><a href="">Pricing</a></li>
+                            <li class="list-items"><a href="">About</a></li>
+                            <li class="list-items"><a href="">Contact</a></li>
+                            <li class="list-items">|</li>
+                            <li class="list-items"><a href="">Login</a></li>
+                            <li class="list-items"><a href="">Signup</a></li>
+                            <select>
+                                <option value="India">🇮🇳</option>
+                                <option value="Englad">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hemburger">
+                        <i onclick="clickme()" class="fa-solid fa-bars icon"></i>
+                    </div>
+                    <div class="ul-item">
+                        <li class="list-items"><a href="">Feature</a></li>
+                        <li class="list-items"><a href="">Pricing</a></li>
+                        <li class="list-items"><a href="">About</a></li>
+                        <li class="list-items"><a href="">Contact</a></li>
+                        <li class="list-items">|</li>
+                        <li class="list-items"><a href="">Login</a></li>
+                        <li class="list-items"><a href="">Signup</a></li>
+                        <select>
+                            <option value="India">🇮🇳</option>
+                            <option value="Englad">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+                        </select>
+                    </div>
                 </ul>
             </div>
         </nav>
         <div class="header-txt">
-            <h1 class="main-txt container1">A Powerful Influencer Marketing Platform for Advertiser</h1>
+            <div>
+                <h1 class="main-txt container1">A Powerful Influencer Marketing Platform for Advertiser</h1>
+            </div>
             <button class="btn">Start your Free Trial</button>
         </div>
     </header>
@@ -93,7 +115,7 @@
             </div>
         </div>
     </section>
-    <section class="extra-btn">
+    <section class="extra-btn footer-main">
         <p class="extra-btn-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempora quae harum
             expedita distinctio odit omnis</p>
         <button class="extra-btn-btn">Start your Free Trial</button>
@@ -128,12 +150,26 @@
         </div>
         <hr>
         <div class="last-div-footer">
-            <h1 class="footer-foot1">Dj</h1>
+            <h1 class="footer-foot1">DJ</h1>
             <p class="footer-foot">Dj@2015</p>
 
         </div>
 
     </section>
 </body>
+<script>
+    var k = 1;
+    function clickme() {
+        var ul_li = document.getElementsByClassName('ul-itemsm')[0]
+        if (k == 0) {
+            ul_li.style.display = 'block'
+            k = 1;
+        }
+        else {
+            ul_li.style.display = 'none'
+            k = 0;
+        }
+    }
+</script>
 
 </html>
