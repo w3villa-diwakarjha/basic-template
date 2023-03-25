@@ -16,26 +16,8 @@
         <nav class="navbar">
             <div class="container">
                 <h1 class="logo">W3 villa</h1>
-                <ul class="ul-items">
-                    <div class="ul-itemsmm ">
-                        <div class="ul-itemsm">
-                            <li class="list-items"><a href="">Feature</a></li>
-                            <li class="list-items"><a href="">Pricing</a></li>
-                            <li class="list-items"><a href="">About</a></li>
-                            <li class="list-items"><a href="">Contact</a></li>
-                            <li class="list-items">|</li>
-                            <li class="list-items"><a href="">Login</a></li>
-                            <li class="list-items"><a href="">Signup</a></li>
-                            <select>
-                                <option value="India">🇮🇳</option>
-                                <option value="Englad">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="hemburger">
-                        <i onclick="clickme()" class="fa-solid fa-bars icon"></i>
-                    </div>
-                    <div class="ul-item">
+                <div class="ul-items">
+                    <div class="ul-item" id="nav-links">
                         <li class="list-items"><a href="">Feature</a></li>
                         <li class="list-items"><a href="">Pricing</a></li>
                         <li class="list-items"><a href="">About</a></li>
@@ -48,7 +30,10 @@
                             <option value="Englad">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
                         </select>
                     </div>
-                </ul>
+                    <div class="hemburger">
+                        <i onclick="clickme()" class="fa-solid fa-bars icon" id="nav-toggle"></i>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="header-txt">
@@ -84,34 +69,37 @@
         </div>
         <div class="main-img">
             <div class="sub-img">
-                <div class="img1">
-                    <div class="image1">
-                        <img src="./img/22654-6-man-thumb.png" alt="internet connection">
-                    </div>
-                    <p class=" name-img">Ramus D. Nilesen</p>
-                    <p class="name-para">CEO- Founder Who Makes easy to change and easy to Create new Element</p>
-                    <hr>
-                    <p class="name-img-para">@ DJ</p>
+                <div class="sub-image">
+                    <div class="img1">
+                        <div class="image1">
+                            <img src="./img/22654-6-man-thumb.png" alt="internet connection">
+                        </div>
+                        <p class=" name-img">Ramus D. Nilesen</p>
+                        <p class="name-para">CEO- Founder Who Makes easy to change and easy to Create new Element</p>
+                        <hr>
+                        <p class="name-img-para">@ DJ</p>
 
-                </div>
-                <div class="img2">
-                    <div class="image2">
-                        <img src="./img/22654-6-man-thumb.png" alt="internet connection">
                     </div>
-                    <p class="name-img">Diwakar Jha</p>
-                    <p class="name-para">CEO- Founder Who Makes easy to change and easy to Create new Element</p>
-                    <hr>
-                    <p class="name-img-para">@ DJ</p>
-                </div>
-                <div class="img3">
-                    <div class="image3">
-                        <img src="./img/22654-6-man-thumb.png" alt="internet connection">
+                    <div class="img2">
+                        <div class="image2">
+                            <img src="./img/22654-6-man-thumb.png" alt="internet connection">
+                        </div>
+                        <p class="name-img">Diwakar Jha</p>
+                        <p class="name-para">CEO- Founder Who Makes easy to change and easy to Create new Element</p>
+                        <hr>
+                        <p class="name-img-para">@ DJ</p>
                     </div>
-                    <p class="name-img-heading name-img">Diwakar Jha</p>
-                    <p class="name-para">CEO- Founder Who Makes easy to change and easy to Create new Element</p>
-                    <hr>
-                    <p class="name-img-para">@ DJ</p>
+                    <div class="img3">
+                        <div class="image3">
+                            <img src="./img/22654-6-man-thumb.png" alt="internet connection">
+                        </div>
+                        <p class="name-img-heading name-img">Diwakar Jha</p>
+                        <p class="name-para">CEO- Founder Who Makes easy to change and easy to Create new Element</p>
+                        <hr>
+                        <p class="name-img-para">@ DJ</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -158,18 +146,11 @@
     </section>
 </body>
 <script>
-    var k = 1;
-    function clickme() {
-        var ul_li = document.getElementsByClassName('ul-itemsm')[0]
-        if (k == 0) {
-            ul_li.style.display = 'block'
-            k = 1;
-        }
-        else {
-            ul_li.style.display = 'none'
-            k = 0;
-        }
-    }
+    const togglebutton= document.getElementById('nav-toggle');
+    const navlinks= document.getElementById('nav-links');
+    togglebutton.addEventListener('click', ()=>{
+        navlinks.classList.toggle('active');
+    })
 </script>
 
 </html>
