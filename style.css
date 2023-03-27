@@ -215,6 +215,7 @@ img {
     margin-top: 10px;
 }
 
+
 .extra-btn {
     background: deeppink;
     padding: 3rem 2rem;
@@ -322,6 +323,18 @@ i {
         color: #fff;
         display: block;
     }
+
+    .ul-items .fa-xmark{
+        display: none;
+    }
+    
+    .ul-items .dis-block{
+        display: block;
+    }
+    .ul-items .dis-none{
+        display: none;
+    }
+
 
     .ul-item {
     flex-direction: column;

@@ -31,7 +31,8 @@
                         </select>
                     </div>
                     <div class="hemburger">
-                        <i onclick="clickme()" class="fa-solid fa-bars icon" id="nav-toggle"></i>
+                        <i class="fa-solid fa-bars icon" id="nav-toggle"></i>
+                        <i class="fa-sharp fa-solid fa-xmark" id="nav-toggle-cross"></i>
                     </div>
                 </div>
             </div>
@@ -148,9 +149,23 @@
 <script>
     const togglebutton= document.getElementById('nav-toggle');
     const navlinks= document.getElementById('nav-links');
+    const btnCross = document.getElementById('nav-toggle-cross');
+   
     togglebutton.addEventListener('click', ()=>{
-        navlinks.classList.toggle('active');
+        navlinks.classList.add('active');
+        btnCross.classList.toggle('dis-block')
+        togglebutton.classList.toggle('dis-none')
+
     })
+
+    btnCross.addEventListener('click', function(){
+        navlinks.classList.remove('active');
+        btnCross.classList.toggle('dis-block')
+        togglebutton.classList.toggle('dis-none')
+
+        
+    })
+    
 </script>
 
 </html>
